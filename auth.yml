@@ -4,18 +4,13 @@ data:
     - groups:
       - system:bootstrappers
       - system:nodes
-      rolearn: arn:aws:iam::590183752918:role/eksctl-expense-1-nodegroup-ng-1-NodeInstanceRole-idGP6z40oUB5
+      rolearn: arn:aws:iam::590183752918:role/eksctl-expense-1-nodegroup-ng-1-NodeInstanceRole-oX1b0HeNt3ND
       username: system:node:{{EC2PrivateDNSName}}
-  mapUsers: |
-    - groups:
-      - expense-trainee
-      userarn: arn:aws:iam::590183752918:group/naveen
-      username: naveen
-
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2024-11-28T14:01:03Z"
+  creationTimestamp: "2024-12-07T06:19:38Z"
   name: aws-auth
   namespace: kube-system
-  resourceVersion: "2946"
-  uid: b4f8c25c-d9a5-4874-bf96-b93d41fb6bdc
+  resourceVersion: "2825"
+  uid: c743fb71-cacd-490c-b6a8-dac60e5ff8e2
+
